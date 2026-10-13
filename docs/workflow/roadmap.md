@@ -3,12 +3,12 @@
 **Status:** Active master roadmap
 **Canonical requirements:** `docs/product/requirements-engineering.md`
 
-**Active plan:** none yet. Run `grill-with-design`, then copy `plans/plan-00-template/` to `plans/plan-01-<name>/`.
+**Active plan:** `plans/plan-01-admin-api/` (Department Admin and System Admin REST API foundation).
 **Build loop:** [`playbook.md`](playbook.md)
 
 ## Goal
 
-v1 is the live hackathon demo: the P0 requirements (FR1.1, FR1.2, FR1.3, FR1.5, FR2.1, FR2.2, FR2.4, FR3.1, FR3.2, FR4.1, FR4.2, FR4.4) running end to end through the demo script in `docs/product/04-pitch-deck-outline.md`. P1 follows if time allows. Each plan ends with something live, so the product is never half-broken.
+v1 is the live hackathon demo: the P0 requirements (FR1.1, FR1.2, FR1.3, FR1.5, FR2.1, FR2.2, FR2.4, FR3.1, FR4.4) running end to end through the demo script in `docs/product/04-pitch-deck-outline.md`. P1 follows if time allows. Each plan ends with something live, so the product is never half-broken.
 
 ## Execution Protocol
 
@@ -25,12 +25,9 @@ Use `docs/agents/skill-policy.md` for skill routing, model routing, and completi
 
 ## Plan Sequence
 
-To be set after grilling. Suggested slices from the PRD:
-
-1. Grounded chat over the four sources with citations and refusal (FR1.1, FR1.2, FR1.3, FR1.5).
-2. College tenancy and filtered feed (FR2.1, FR2.2, FR2.4).
-3. Admin studio: banners, campaigns, source upload (FR3.1, FR3.2, FR4.4).
-4. Admin insights: top questions and gap list (FR4.1, FR4.2).
+1. Admin API foundation: tenants, role boundaries, announcements, and source lifecycle (Plan 01; FR2.1, FR2.4, FR3.1, FR4.4).
+2. Grounded chat over the four sources with citations and refusal (FR1.1, FR1.2, FR1.3, FR1.5).
+3. College tenancy and filtered student feed (FR2.2).
 
 ## Content And Setup Owed
 

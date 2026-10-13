@@ -22,3 +22,6 @@ Thumbs.db
 .scratch/
 .npmrc
 graphify-out/
+
+# Server-managed source uploads
+/uploads/

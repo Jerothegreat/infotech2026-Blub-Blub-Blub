@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "pnpm migrate && next dev",
+    "migrate": "tsx scripts/migrate.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
+    "test": "tsx --test \"lib/**/*.test.ts\"",
     "check": "pnpm typecheck && pnpm lint && pnpm build"
   },
   "dependencies": {
+    "@fluentui/react-components": "^9.74.9",
     "next": "16.4.0",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
@@ -23,6 +28,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.0",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   },
   "packageManager": "pnpm@11.26.0"

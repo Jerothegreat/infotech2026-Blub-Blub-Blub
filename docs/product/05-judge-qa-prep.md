@@ -4,7 +4,7 @@ Five minutes means about five questions. Keep each answer under 30 seconds and e
 
 ## 1. How do you enforce that answers come only from the organizers' documents?
 
-- Three layers: retrieval is limited to indexed organizer files; the prompt allows only retrieved chunks as context; a gate refuses when the match score is low.
+- Three layers: retrieval is limited to organizer files; the prompt allows only retrieved chunks as context; a gate refuses when the match score is low.
 - Output check: an answer without a citation to a retrieved chunk is blocked and replaced with the fallback.
 - Proof: show the refusal for "esports scholarship" and the test-set results.
 
@@ -29,7 +29,7 @@ Five minutes means about five questions. Keep each answer under 30 seconds and e
 ## 5. What is the admin workflow for monthly updates?
 
 - Log in, choose the college, then open the banner editor: title, body, audience, dates. Pick a seasonal preset if relevant. Publish. Target: under 5 minutes.
-- To change AI knowledge, upload or replace a source file; it is chunked, tagged and indexed automatically, with the old version retired.
+- To change AI knowledge, upload or replace a source file; the uploaded version becomes available when its upload completes.
 - Afterwards, open the gap list to see which student questions were refused and what to upload next.
 
 ## Bonus if asked: "What if the sources are wrong?"

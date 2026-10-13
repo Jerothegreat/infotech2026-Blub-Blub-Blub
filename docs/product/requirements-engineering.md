@@ -29,8 +29,8 @@ IDs and priorities are defined in `02-prd.md` §5. P0 = live demo, P1 = if time 
 | --- | --- | --- | --- | --- |
 | FR1 Strict source-grounded chatbot (RAG) | FR1.1 to FR1.6 | FR1.1, FR1.2, FR1.3, FR1.5 | FR1.4 | FR1.6 |
 | FR2 Multi-tenant college segmentation | FR2.1 to FR2.4 | FR2.1, FR2.2, FR2.4 | FR2.3 | |
-| FR3 Dynamic content and reminders | FR3.1 to FR3.4 | FR3.1, FR3.2 | FR3.3 | FR3.4 |
-| FR4 Admin analytics and feedback | FR4.1 to FR4.4 | FR4.1, FR4.2, FR4.4 | FR4.3 | |
+| FR3 Dynamic content and reminders | FR3.1 to FR3.4 | FR3.1 | FR3.2, FR3.3 | FR3.4 |
+| FR4 Admin analytics and feedback | FR4.1 to FR4.4 | FR4.4 | FR4.1, FR4.2, FR4.3 | |
 
 ## Non-Functional Requirements
 

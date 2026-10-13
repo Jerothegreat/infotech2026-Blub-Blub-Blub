@@ -22,7 +22,7 @@ Run from the repository root.
 | --- | --- |
 | `pnpm --dir app install` | install dependencies |
 | `pnpm --dir app check` | typecheck, lint, build (no test script yet) |
-| `pnpm --dir app dev` | local dev server |
+| `pnpm --dir app dev` | apply SQLite migrations, then start the local dev server |
 
 ## Deploy
 

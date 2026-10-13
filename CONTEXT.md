@@ -16,8 +16,7 @@ HeronHub (working name) is a centralized, college-aware campus hub for the Unive
 | Grounding gate | The check that refuses when retrieval is weak and blocks any answer without a citation. |
 | Fallback | The exact refusal text: "Information not in provided sources". |
 | Conflict flag | Showing both versions, with citations, when sources disagree (known conflicts: `02-prd.md` §3). |
-| Gap list | Refused questions, shown to admins so they know what to upload next. |
-| Banner / seasonal campaign | Admin-published announcement with audience and dates; campaigns are presets (Mental Health Awareness Month, midterms, enrollment). |
+| Banner | Admin-published announcement with audience and dates. |
 | Student / Department Admin / System Admin | The three personas (`02-prd.md` §2). |
 | OLEA | UMak's online application portal used for scholarship applications. |
 | CAS | Center for Admissions and Scholarships, owner of scholarship rules. |

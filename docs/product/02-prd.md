@@ -99,7 +99,7 @@ Priority: **P0** = needed for the live demo, **P1** = build if time allows, **P2
 | ID | Requirement | Priority |
 | --- | --- | --- |
 | FR3.1 | Monthly banner/announcement editor: title, body, audience (college), start and end date. | P0 |
-| FR3.2 | Seasonal campaign toggles with presets (Mental Health Awareness Month, midterms week, enrollment deadlines) that pin a themed card for the chosen audience. | P0 |
+| FR3.2 | Seasonal campaign toggles with presets (Mental Health Awareness Month, midterms week, enrollment deadlines) that pin a themed card for the chosen audience. | Deferred |
 | FR3.3 | Reminder cards sorted by date, with a visible "ends in N days" label. | P1 |
 | FR3.4 | Optional email or push reminder before a deadline. | P2 |
 
@@ -107,10 +107,10 @@ Priority: **P0** = needed for the live demo, **P1** = build if time allows, **P2
 
 | ID | Requirement | Priority |
 | --- | --- | --- |
-| FR4.1 | Top questions by college and period, from the query log. | P0 |
-| FR4.2 | List of refused questions ("gaps") so admins know what to upload next. | P0 |
+| FR4.1 | Top questions by college and period, from the query log. | Deferred |
+| FR4.2 | List of refused questions ("gaps") so admins know what to upload next. | Deferred |
 | FR4.3 | Thumbs up/down and a short feedback form on every answer; admins can export submissions as CSV. | P1 |
-| FR4.4 | Source management: upload, replace and retire a source file; re-index starts automatically. | P0 |
+| FR4.4 | Source management: upload, replace and retire a source file; the uploaded version is immediately available when the upload completes. | P0 |
 
 ## 6. Non-Functional Requirements
 

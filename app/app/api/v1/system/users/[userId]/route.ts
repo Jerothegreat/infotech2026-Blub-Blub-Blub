@@ -1,0 +1,10 @@
+import { getUser, requireSystemAdmin, SystemAdminError, updateUser } from "@/lib/system-admin";
+import { getSystemContext, type SystemContextProvider } from "../../tenants/route";
+import { ApiError, errorResponse as foundationErrorResponse, toApiError } from "@/lib/http/errors";
+type Params = { params: Promise<{ userId: string }> };
+function errorResponse(error: unknown): Response { if (error instanceof SystemAdminError) return foundationErrorResponse(new ApiError(error.code === "CONFLICT" ? "INVALID_INPUT" : error.code, error.message, error.status)); return foundationErrorResponse(toApiError(error)); }
+function id(value: string): number { const parsed = Number(value); if (!Number.isInteger(parsed) || parsed < 1) throw new SystemAdminError("INVALID_INPUT", "userId must be a positive integer", 400); return parsed; }
+async function body(request: Request): Promise<unknown> { try { return await request.json(); } catch { throw new SystemAdminError("INVALID_INPUT", "Request body must be valid JSON", 400); } }
+export function createUserDetailHandlers(getContext: SystemContextProvider) { return { GET: async (request: Request, context: Params) => { let systemContext; try { systemContext = await getContext(request); requireSystemAdmin(systemContext.actor); return Response.json({ user: await getUser(systemContext.database, id((await context.params).userId)) }); } catch (error) { return errorResponse(error); } finally { await systemContext?.close?.(); } }, PATCH: async (request: Request, context: Params) => { let systemContext; try { systemContext = await getContext(request); requireSystemAdmin(systemContext.actor); return Response.json({ user: await updateUser(systemContext.database, id((await context.params).userId), await body(request)) }); } catch (error) { return errorResponse(error); } finally { await systemContext?.close?.(); } } }; }
+export async function GET(request: Request, context: Params) { return createUserDetailHandlers(getSystemContext).GET(request, context); }
+export async function PATCH(request: Request, context: Params) { return createUserDetailHandlers(getSystemContext).PATCH(request, context); }
