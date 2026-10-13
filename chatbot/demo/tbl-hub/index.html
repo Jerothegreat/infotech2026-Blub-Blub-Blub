@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | TBL Hub (HeronsGuide demo)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tbl.css">
+</head>
+<body>
+  <!-- Local demo copy of the UMak TBL Hub (Moodle 5.0) dashboard, used only to show where the
+       HeronsGuide assistant plugs in. Not affiliated content; do not publish. -->
+  <nav class="navbar" aria-label="Site">
+    <div class="nav-inner">
+      <button class="hamburger" type="button" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <a class="brand" href="#">
+        <img src="assets/seal.svg" alt="" width="64" height="64">
+        <span>University of Makati - TBL Hub</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active" aria-current="page">Dashboard</a></li>
+        <li><a href="#">My courses</a></li>
+        <li><a href="#">Legacy TBL Hub</a></li>
+      </ul>
+      <div class="nav-tools">
+        <button class="tool" type="button" aria-label="Notifications (8)">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+          <span class="badge">8</span>
+        </button>
+        <button class="tool" type="button" aria-label="Messages">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 4h16v12H8l-4 4z"/></svg>
+        </button>
+        <button class="user" type="button" aria-label="User menu">
+          <span class="avatar" aria-hidden="true">AR</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <label class="edit-mode">Edit mode <span class="switch" aria-hidden="true"></span><input type="checkbox" class="sr"></label>
+      </div>
+    </div>
+  </nav>
+
+  <button class="drawer-tab" type="button" aria-label="Open block drawer">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+  </button>
+
+  <main class="page">
+    <div class="page-head">
+      <h1>Dashboard</h1>
+      <button class="placements-toggle" type="button" aria-pressed="false">Show HeronsGuide placements</button>
+    </div>
+
+    <!-- Placement 2: "Ask HeronsGuide" dashboard block (Moodle HTML block or small block plugin). -->
+    <section class="card ask-block" data-placement="② Dashboard block: Ask HeronsGuide" aria-labelledby="ask-title">
+      <div class="card-head">
+        <h2 id="ask-title">Ask HeronsGuide</h2>
+        <span class="tag">Answers only from official UMak documents</span>
+      </div>
+      <div class="card-body">
+        <form class="ask-form">
+          <label class="sr" for="ask-input">Ask HeronsGuide</label>
+          <input id="ask-input" type="text" maxlength="1000" placeholder="Ask about scholarships, requirements, offices…" autocomplete="off">
+          <button type="submit">Ask</button>
+        </form>
+        <div class="ask-chips">
+          <button type="button" class="ask-chip">What GWA do I need to apply for BS Computer Science?</button>
+          <button type="button" class="ask-chip">Who endorses the Varsity Player token fee exemption?</button>
+          <button type="button" class="ask-chip">Where is the Office of the University Registrar?</button>
+        </div>
+        <p class="ask-foot">
+          Prefer chat on your phone?
+          <a class="tg-link" href="#" target="_blank" rel="noopener">Continue on Telegram</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="card timeline" aria-labelledby="timeline-title">
+      <div class="card-head"><h2 id="timeline-title">Timeline</h2></div>
+      <div class="card-body grey">
+        <div class="filters">
+          <button type="button" class="select">All <span class="caret"></span></button>
+          <button type="button" class="select">Sort by dates <span class="caret"></span></button>
+          <input type="search" placeholder="Search by activity type or name" aria-label="Search by activity type or name">
+        </div>
+        <hr>
+        <h3 class="date">Sunday, 25 October 2026</h3>
+        <div class="event">
+          <span class="time">23:59</span>
+          <svg class="event-icon" viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 17v-6M9.5 13.5 12 11l2.5 2.5"/></svg>
+          <div class="event-text">
+            <a href="#">Assignment #3: Introduction to GitHub</a>
+            <span>Assignment is due · ELEC4 - ELECTIVE 4 (IV-ACSAD)</span>
+          </div>
+          <button type="button" class="ghost">Add submission</button>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+    <section class="card guides">
+      <article>
+        <h2>Getting Started with TBL LMS (Beginner's Guide for Students)</h2>
+        <p>This guide is designed to help new students get started with the platform quickly and confidently. You'll learn how to log in, navigate your dashboard, access courses, submit assignments, participate in discussions, take quizzes, and track your learning progress. Whether you're using TBL LMS for the first time or need a quick refresher, this guide will provide the essential steps to help you make the most of your online learning experience.</p>
+        <div class="banner banner-neon" role="img" aria-label="Assignment submission video thumbnail">
+          <img src="assets/seal.svg" alt="" class="b-seal left"><span>ASSIGNMENT SUBMISSION</span><img src="assets/seal.svg" alt="" class="b-seal right">
+        </div>
+      </article>
+      <article>
+        <h2>Getting Started with TBL LMS (Teacher's Guide)</h2>
+        <p>This guide is designed for teachers who are new to Moodle and want to learn the essential tools for creating and managing online courses. It covers the fundamentals of course setup, adding learning materials and activities, grading assessments, and monitoring learner progress. By the end of this tutorial, you'll have the knowledge and confidence to effectively use Moodle 5.0 to deliver engaging and organized online learning experiences.</p>
+        <div class="banner banner-gold" role="img" aria-label="Teacher's guide video thumbnail">
+          <img src="assets/seal.svg" alt="" class="b-seal left"><span>TEACHER'S GUIDE</span><img src="assets/seal.svg" alt="" class="b-seal right">
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <button class="to-top" type="button" aria-label="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg>
+  </button>
+  <button class="help" type="button" aria-label="Help">?</button>
+  <div class="placement-label launcher-label" aria-hidden="true">① Floating assistant · every TBL page</div>
+
+  <!-- Placement 1: the floating assistant. In the real TBL Hub this one line goes in
+       Site administration → Appearance → Additional HTML → "Before BODY is closed". -->
+  <script src="/widget.js" data-student-token="demo-student" data-college="CCIS" data-offset-bottom="112" data-offset-right="66" data-open="inbox" defer></script>
+  <script src="tbl.js" defer></script>
+</body>
+</html>

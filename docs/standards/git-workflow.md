@@ -23,7 +23,7 @@ Use only when several sessions (for example flash-tier models) build independent
 For a verified plan or phase:
 
 1. Inspect branch, status, diff, remotes, and recent log.
-2. Run `pnpm --dir app check` and any plan-specific checks and record results in the plan's `evidence.md`.
+2. Run `pnpm --dir app check && uv --directory chatbot run ruff check . && uv --directory chatbot run pytest` and any plan-specific checks and record results in the plan's `evidence.md`.
 3. Request independent code review (see the model routing in `docs/agents/skill-policy.md`). Critical and High findings block promotion; fix and repeat. If the owner explicitly promotes first, the gate records "promoted by owner, independent review owed" and the review stays open.
 4. Record the verified SHA in the plan's `gate.md`.
 5. Ask for explicit current-chat authorization before commit, merge, push, or branch deletion.

@@ -1,4 +1,4 @@
-# HeronHub Workflow Documentation
+# HeronsGuide Workflow Documentation
 
 This is the canonical entrypoint for implementation work.
 

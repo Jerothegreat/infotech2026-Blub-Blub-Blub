@@ -1,0 +1,228 @@
+{
+  "_note": "FICTIONAL sample student for demos. Structure follows the UMak Certificate of Registration (COR) and Moodle (TBL Hub) gradebook/assignment data. No real person. Google Meet links are placeholders, not real meetings.",
+  "as_of": "2026-10-13",
+  "profile": {
+    "student_no": "K00000001",
+    "first_name": "Ana",
+    "last_name": "Reyes",
+    "college": "CCIS",
+    "college_name": "College of Computing and Information Sciences",
+    "program": "Bachelor of Science in Computer Science",
+    "year_level": "Fourth Year",
+    "section": "IV-ACSAD",
+    "term": "2026-2027 First Semester",
+    "address": "SAMPLE ONLY - never sent to the model",
+    "guardian": "SAMPLE ONLY - never sent to the model",
+    "birth_date": "SAMPLE ONLY - never sent to the model",
+    "email": "sample.student@example.edu"
+  },
+  "courses": [
+    {
+      "code": "ADEPT",
+      "title": "Advanced English Pre-Employment Training",
+      "units": 3.0,
+      "schedule": [
+        {
+          "days": "F",
+          "time": "01:30 PM-04:30 PM",
+          "room": "VR-FRI (virtual)"
+        }
+      ],
+      "meet_link": "https://meet.google.com/adp-tqwm-kzr"
+    },
+    {
+      "code": "SOCIPP",
+      "title": "Social Issues and Professional Practice",
+      "units": 3.0,
+      "schedule": [
+        {
+          "days": "M",
+          "time": "04:30 PM-07:30 PM",
+          "room": "VR-MON (virtual)"
+        }
+      ],
+      "meet_link": "https://meet.google.com/scp-vnhd-pqa"
+    },
+    {
+      "code": "THESIS1",
+      "title": "CS Thesis Writing 1",
+      "units": 3.0,
+      "schedule": [
+        {
+          "days": "MTH",
+          "time": "02:30 PM-04:30 PM",
+          "room": "HPSB 606"
+        },
+        {
+          "days": "MTH",
+          "time": "06:00 PM-09:00 PM",
+          "room": "VR-MON (virtual)"
+        }
+      ],
+      "meet_link": "https://meet.google.com/ths-rkfb-wme"
+    },
+    {
+      "code": "ELEC3",
+      "title": "Elective 3",
+      "units": 3.0,
+      "schedule": [
+        {
+          "days": "FS",
+          "time": "07:00 PM-09:00 PM",
+          "room": "B2 110"
+        },
+        {
+          "days": "FS",
+          "time": "07:30 AM-10:30 AM",
+          "room": "VR-FRI (virtual)"
+        }
+      ],
+      "meet_link": "https://meet.google.com/elt-zqsp-hny"
+    },
+    {
+      "code": "ELEC4",
+      "title": "Elective 4",
+      "units": 3.0,
+      "schedule": [
+        {
+          "days": "MTH",
+          "time": "12:00 PM-02:00 PM",
+          "room": "HPSB 606"
+        },
+        {
+          "days": "MTH",
+          "time": "01:30 PM-04:30 PM",
+          "room": "VR-MON (virtual)"
+        }
+      ],
+      "meet_link": "https://meet.google.com/elf-gwdc-bxu"
+    },
+    {
+      "code": "ELEC5",
+      "title": "Elective 5",
+      "units": 3.0,
+      "schedule": [
+        {
+          "days": "FS",
+          "time": "05:00 PM-07:00 PM",
+          "room": "HPSB 606"
+        },
+        {
+          "days": "FS",
+          "time": "10:30 AM-01:30 PM",
+          "room": "VR-FRI (virtual)"
+        }
+      ],
+      "meet_link": "https://meet.google.com/elv-mjta-rco"
+    }
+  ],
+  "assessment": {
+    "items": [
+      {
+        "label": "Tuition Fee",
+        "amount": 36000.0
+      },
+      {
+        "label": "Energy Fee",
+        "amount": 2000.0
+      },
+      {
+        "label": "TBL Hub",
+        "amount": 500.0
+      },
+      {
+        "label": "Library Fee",
+        "amount": 500.0
+      }
+    ],
+    "total": 39000.0,
+    "less": [
+      {
+        "label": "Proud Makatizen Scholar",
+        "amount": 38000.0
+      },
+      {
+        "label": "UMak Scholar: Dean's Lister - Full",
+        "amount": 1000.0
+      }
+    ],
+    "token_fee": 0.0,
+    "total_payable": 0.0
+  },
+  "deadlines": [
+    {
+      "course": "ELEC3",
+      "title": "Quiz 4",
+      "type": "quiz",
+      "due": "2026-10-14T21:00",
+      "status": "Not attempted"
+    },
+    {
+      "course": "SOCIPP",
+      "title": "Reflection Paper 2: Data Privacy Act",
+      "type": "assignment",
+      "due": "2026-10-16T17:00",
+      "status": "Not submitted"
+    },
+    {
+      "course": "THESIS1",
+      "title": "Chapter 2: Review of Related Literature",
+      "type": "assignment",
+      "due": "2026-10-20T23:59",
+      "status": "Draft (not yet submitted for grading)"
+    },
+    {
+      "course": "ELEC4",
+      "title": "Assignment #3: Introduction to GitHub",
+      "type": "assignment",
+      "due": "2026-10-25T23:59",
+      "status": "Not submitted"
+    },
+    {
+      "course": "ADEPT",
+      "title": "Mock Interview Recording",
+      "type": "assignment",
+      "due": "2026-10-30T23:59",
+      "status": "Submitted for grading"
+    }
+  ],
+  "grades": [
+    {
+      "course": "ELEC4",
+      "item": "Assignment #1: Version Control Basics",
+      "score": 95,
+      "max": 100
+    },
+    {
+      "course": "ELEC4",
+      "item": "Assignment #2: Branching Workflows",
+      "score": 88,
+      "max": 100
+    },
+    {
+      "course": "THESIS1",
+      "item": "Chapter 1: Introduction",
+      "score": 92,
+      "max": 100
+    },
+    {
+      "course": "SOCIPP",
+      "item": "Quiz 1",
+      "score": 18,
+      "max": 20
+    },
+    {
+      "course": "ELEC3",
+      "item": "Quiz 3",
+      "score": 9,
+      "max": 10
+    },
+    {
+      "course": "ADEPT",
+      "item": "Resume Draft",
+      "score": 47,
+      "max": 50
+    }
+  ],
+  "previous_term_gwa": "1.21"
+}

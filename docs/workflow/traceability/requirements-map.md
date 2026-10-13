@@ -4,17 +4,17 @@ Current requirement-to-implementation status. Update a row only after the owning
 
 | ID | Requirement | Owning plan | Status | Evidence |
 | --- | --- | --- | --- | --- |
-| FR1.1 | Answer only from retrieved source chunks | TBD | Planned | |
-| FR1.2 | Citations on every answer | TBD | Planned | |
-| FR1.3 | Exact fallback when sources do not answer | TBD | Planned | |
-| FR1.4 | Flag conflicting sources (P1) | TBD | Planned | |
-| FR1.5 | Prompt-injection defense and citation check | TBD | Planned | |
+| FR1.1 | Answer only from retrieved source chunks | 01 | In progress | |
+| FR1.2 | Citations on every answer | 01 | In progress | |
+| FR1.3 | Exact fallback when sources do not answer | 01 | In progress | |
+| FR1.4 | Flag conflicting sources (P1) | 01 | In progress | |
+| FR1.5 | Prompt-injection defense and citation check | 01 | In progress | |
 | FR1.6 | Answer in the question's language (P2) | TBD | Deferred | |
-| FR2.1 | Tenant tag on chunks and announcements | TBD | Planned | |
-| FR2.2 | Student college scopes retrieval and feed | TBD | Planned | |
-| FR2.3 | Browse another college's content (P1) | TBD | Planned | |
-| FR2.4 | Admins edit only their tenant | Plan 01 | Ready for independent review | P01-FB-08: server-verified Department Admin session and tenant-scoped dashboard API integration. |
-| FR3.1 | Monthly banner editor | Plan 01 | Ready for independent review | P01-FB-08: Department Admin dashboard publishes announcements through the protected API. |
+| FR2.1 | Tenant tag on chunks and announcements | Plan 01 (chatbot) | In progress | |
+| FR2.2 | Student college scopes retrieval and feed | Plan 01 (chatbot) | In progress | |
+| FR2.3 | Browse another college's content (P1) | Plan 01 (chatbot) | In progress | |
+| FR2.4 | Admins edit only their tenant | Plan 01 (admin API) | Ready for independent review | P01-FB-08: server-verified Department Admin session and tenant-scoped dashboard API integration. |
+| FR3.1 | Monthly banner editor | Plan 01 (admin API) | Ready for independent review | P01-FB-08: Department Admin dashboard publishes announcements through the protected API. |
 | FR3.2 | Seasonal campaign presets | Deferred | Deferred | Removed from Plan 01 scope. |
 | FR3.3 | Reminder cards with "ends in N days" (P1) | TBD | Planned | |
 | FR3.4 | Email or push reminders (P2) | TBD | Deferred | |

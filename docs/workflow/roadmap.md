@@ -1,9 +1,11 @@
-# HeronHub Roadmap
+# HeronsGuide Roadmap
 
 **Status:** Active master roadmap
 **Canonical requirements:** `docs/product/requirements-engineering.md`
 
-**Active plan:** `plans/plan-01-admin-api/` (Department Admin and System Admin REST API foundation).
+**Active plans (parallel tracks):**
+- `plans/plan-01-admin-api/`: Department Admin and System Admin REST API foundation (admin dashboard in `app/`).
+- [`plans/plan-01-chatbot/`](plans/plan-01-chatbot/plan.md): grounded chatbot for TBL Hub and Telegram (`chatbot/`).
 **Build loop:** [`playbook.md`](playbook.md)
 
 ## Goal
@@ -25,17 +27,19 @@ Use `docs/agents/skill-policy.md` for skill routing, model routing, and completi
 
 ## Plan Sequence
 
-1. Admin API foundation: tenants, role boundaries, announcements, and source lifecycle (Plan 01; FR2.1, FR2.4, FR3.1, FR4.4).
-2. Grounded chat over the four sources with citations and refusal (FR1.1, FR1.2, FR1.3, FR1.5).
+1. Admin API foundation: tenants, role boundaries, announcements, and source lifecycle (`plan-01-admin-api`; FR2.4, FR3.1, FR4.4).
+2. Grounded chat over the four sources with citations and refusal, in TBL Hub and Telegram (`plan-01-chatbot`; FR1.1–FR1.5, FR2.1, FR2.2, FR2.3). Runs in parallel with item 1.
 3. College tenancy and filtered student feed (FR2.2).
 
 ## Content And Setup Owed
 
 Everything the owner will supply later. Each item names the file or setting that takes it.
 
-- [ ] Decide where `Source01.md` to `Source04.md` live and commit them: repo layout, `docs/product/requirements-engineering.md`
-- [ ] Choose LLM and vector store: `docs/adr/`, `docs/dev/technology-stack-and-development.md`
+- [x] Sources live in `chatbot/kb/`
+- [x] LLM and retrieval chosen: ADR 0001 (Gemini, no vector store)
+- [ ] `GOOGLE_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_BOT_USERNAME`: `chatbot/.env`
+- [ ] Host for the chatbot service and its URL in the TBL Hub script tag: `docs/dev/technology-stack-and-development.md`
 - [ ] Create the `dev` branch: `docs/standards/git-workflow.md`
 - [ ] Lock the design: `docs/standards/design-brief.md`
 - [ ] Set up Vercel (root `app`) and env vars: `docs/dev/technology-stack-and-development.md`
-- [ ] 20-question grounding test set (SM-1 to SM-3): plan evidence
+- [ ] Run the 20-question grounding test set (SM-1 to SM-3): `chatbot/evals/`, plan 01 evidence

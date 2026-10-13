@@ -29,7 +29,7 @@ Flash-tier models implement; they do not plan, decide, or approve.
 - One ticket per session. Read `AGENTS.md`, the ticket, and only the files the ticket or `plan.md` names.
 - If the ticket is ambiguous, a fact is missing, or the change would touch a file outside the ticket's scope, stop and report instead of guessing. Never invent content facts.
 - Follow `tdd` at the agreed seams; keep the smallest correct diff and no new dependencies.
-- Finish with `pnpm --dir app check` and paste its result lines into the report.
+- Finish with `pnpm --dir app check && uv --directory chatbot run ruff check . && uv --directory chatbot run pytest` and paste its result lines into the report.
 - Do not commit, push, edit `docs/` (other than appending the ticket's evidence row), or change `AGENTS.md`, `CONTEXT.md`, ADRs, or the design brief.
 - A stronger model (review tier) checks the diff against the ticket before it is committed.
 
@@ -40,7 +40,7 @@ Every handoff that queues work for a flash-tier model includes a paste-ready pro
 - opens with "Read AGENTS.md, then follow "Flash-Tier Rules" in docs/agents/skill-policy.md." and names exactly one ticket path plus only the context sections it needs;
 - asks the model to reply first with the files it will touch, the tests it will write (in order), and the source of any content fact, then wait for "go";
 - lists the ticket-specific guardrails (facts it must not invent, files it must not touch, test-first with a red/green log where a seam exists);
-- ends with "Finish with `pnpm --dir app check` and paste the result lines. Do not commit. Do not edit docs/."
+- ends with "Finish with `pnpm --dir app check && uv --directory chatbot run ruff check . && uv --directory chatbot run pytest` and paste the result lines. Do not commit. Do not edit docs/."
 
 The handoff also includes the review-tier prompt the owner pastes into Claude Code after each ticket (review the diff against the ticket, rerun checks, record evidence, commit, report how many fixes were needed).
 
@@ -99,7 +99,7 @@ The handoff also includes the review-tier prompt the owner pastes into Claude Co
 
 - Pure documentation or configuration changes do not require `tdd`, but their links and configuration must be verified.
 - If no executable seam exists, record that fact rather than inventing a test.
-- Non-trivial code changes end with `pnpm --dir app check` and `code-review`.
+- Non-trivial code changes end with `pnpm --dir app check && uv --directory chatbot run ruff check . && uv --directory chatbot run pytest` and `code-review`.
 - Do not duplicate a plan, specification, ticket, decision, or status across durable files.
 
 ## Inactive Skills

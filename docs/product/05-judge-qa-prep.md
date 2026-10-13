@@ -30,6 +30,7 @@ Five minutes means about five questions. Keep each answer under 30 seconds and e
 
 - Log in, choose the college, then open the banner editor: title, body, audience, dates. Pick a seasonal preset if relevant. Publish. Target: under 5 minutes.
 - To change AI knowledge, upload or replace a source file; the uploaded version becomes available when its upload completes.
+- Honest scope if asked: in the hackathon build the dashboard and the chatbot keep separate stores. The live sync from dashboard upload to TBL Hub answers is the designed flow, not yet built.
 - Afterwards, open the gap list to see which student questions were refused and what to upload next.
 
 ## Bonus if asked: "What if the sources are wrong?"

@@ -25,3 +25,17 @@ graphify-out/
 
 # Server-managed source uploads
 /uploads/
+
+# Python (chatbot/)
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+chatbot/data/
+chatbot/evals/results.json
+chatbot/studio/dist/
+
+# Personal documents (e.g. a real Certificate of Registration) never go in Git
+*cor.pdf
+*COR*.pdf
