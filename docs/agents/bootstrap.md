@@ -22,7 +22,7 @@ Completion criterion: dependencies resolve, local environment files exist where 
 
 ## Verify The Workspace
 
-Run `{{CHECK_CMD}}` (typecheck, lint, test, build in order). Start a dev server only after explicit approval for that session.
+Run `pnpm --dir app check` (typecheck, lint, test, build in order). Start a dev server only after explicit approval for that session.
 
 Completion criterion: each command has an observed pass, skip, or failure recorded; skipped checks are blockers or limitations, not passing evidence.
 

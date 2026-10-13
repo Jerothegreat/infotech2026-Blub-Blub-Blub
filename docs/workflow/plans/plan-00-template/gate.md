@@ -3,7 +3,7 @@
 **Gate status:** Planned
 
 - [ ] <Requirement-level acceptance check with evidence>.
-- [ ] `{{CHECK_CMD}}` passes.
+- [ ] `pnpm --dir app check` passes.
 - [ ] Browser script passes (playbook step 5), if UI changed.
 - [ ] Independent code review: <result or "owed">.
 - [ ] Verified SHA: <sha>. Promoted: <date>.

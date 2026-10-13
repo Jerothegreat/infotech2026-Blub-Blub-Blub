@@ -1,6 +1,6 @@
 # Build Playbook
 
-**Status:** Active. This is the reusable build loop for {{PROJECT}}.
+**Status:** Active. This is the reusable build loop for HeronHub.
 **Scope:** Project-agnostic. Copy this file into a new repository and replace the paths in "This Repository" at the end. Repository rules (`AGENTS.md`, the roadmap, and plan packets) still decide *what* gets built; this file decides *how* a build moves from idea to production.
 
 The loop was distilled from the 1mil.dev Plan 02a retro-OS redesign: board first, five owner feedback passes, then promotion. Improve it in place; see "Improving The Playbook".
@@ -112,7 +112,7 @@ Append newest first. Each entry says what happened and the rule now in the loop.
 
 ## This Repository
 
-| Playbook term | {{PROJECT}} path |
+| Playbook term | HeronHub path |
 | --- | --- |
 | Requirements file | `docs/product/requirements-engineering.md` |
 | Plan packets | `docs/workflow/plans/plan-XX-*/` |
@@ -120,6 +120,6 @@ Append newest first. Each entry says what happened and the rule now in the loop.
 | Decisions | `docs/adr/` |
 | Issue log | `docs/standards/issue-log.md` |
 | Owed list | "Content And Setup Owed" in `docs/workflow/roadmap.md` |
-| Workspace check | `{{CHECK_CMD}}` |
-| Branches | `{{DEV_BRANCH}}` (development) → `{{PROD_BRANCH}}` (production, {{DEPLOY}}) |
+| Workspace check | `pnpm --dir app check` |
+| Branches | `dev` (development) → `main` (production, Vercel) |
 | Example run | 1mil.dev `docs/workflow/plans/plan-02a-retro-os/` |

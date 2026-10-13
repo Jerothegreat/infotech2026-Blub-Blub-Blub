@@ -1,4 +1,4 @@
-# {{PROJECT}} Workflow Documentation
+# HeronHub Workflow Documentation
 
 This is the canonical entrypoint for implementation work.
 

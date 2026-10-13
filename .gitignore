@@ -1,0 +1,24 @@
+# Dependencies & build output
+node_modules/
+.next/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Logs and OS
+*.log
+.DS_Store
+Thumbs.db
+
+# Environment variables (commit only .env.example)
+.env
+.env.*
+!.env.example
+
+# Local agent state and machine-specific package-manager overrides
+.agents/
+.claude/
+.scratch/
+.npmrc
+graphify-out/
